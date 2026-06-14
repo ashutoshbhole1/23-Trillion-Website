@@ -11,7 +11,7 @@ const About = () => {
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} style={{ paddingTop: '5rem' }}>
-      <section style={{ background: 'var(--bg-alt)' }}>
+      <section style={{ background: 'var(--bg-tint)' }}>
         <div className="container">
           <div className="responsive-grid-2" style={{ marginBottom: '6rem' }}>
              <motion.div

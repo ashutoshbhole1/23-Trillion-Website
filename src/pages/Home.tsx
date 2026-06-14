@@ -41,7 +41,7 @@ const Home = () => (
     </section>
 
     {/* WHY 23 Trillion */}
-    <section style={{ padding: '6rem 0', background: 'var(--bg-alt)' }}>
+    <section style={{ padding: '6rem 0', background: 'var(--bg-tint)' }}>
       <div className="container">
         <h2 className="section-title" style={{ textAlign: 'center', marginBottom: '3rem' }}>
           WHY <span className="gradient-text">23 Trillion?</span>

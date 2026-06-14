@@ -57,7 +57,7 @@ const Careers = () => {
       </section>
 
       {/* Opportunities */}
-      <section id="opportunities" style={{ padding: '4rem 0', background: 'var(--bg-alt)' }}>
+      <section id="opportunities" style={{ padding: '4rem 0', background: 'var(--bg-tint)' }}>
         <div className="container">
           <h2 className="section-title" style={{ textAlign: 'left' }}>Opportunities For <span className="gradient-text">You</span></h2>
           <p style={{ color: 'var(--text-secondary)', marginBottom: '3rem', fontSize: '1.1rem' }}>We are looking for talented individuals to join our growing team.</p>

@@ -62,7 +62,7 @@ const AISolutions = () => {
       </section>
 
       {/* AI Agents & Automation */}
-      <section style={{ padding: '4rem 0', background: 'var(--bg-alt)' }}>
+      <section style={{ padding: '4rem 0', background: 'var(--bg-tint)' }}>
         <div className="container">
           <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.5rem' }}>
             <Zap size={32} color="var(--primary)" />
