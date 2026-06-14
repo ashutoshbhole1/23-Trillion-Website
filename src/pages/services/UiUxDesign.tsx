@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { PenTool } from 'lucide-react';
 import ContactForm from '../../components/ContactForm';
 
 const UiUxDesign = () => {

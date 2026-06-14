@@ -89,41 +89,69 @@ const Careers = () => {
           </p>
 
           <div className="grid">
-            <div className="card glass-panel" style={{ padding: 0, overflow: 'hidden' }}>
+            <motion.div 
+              className="card glass-panel" 
+              style={{ padding: 0, overflow: 'hidden' }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1, duration: 0.5 }}
+            >
               <div style={{ height: '200px', background: 'linear-gradient(45deg, #4f46e5, #ec4899)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <MapPin size={64} color="white" opacity={0.8} />
               </div>
               <div style={{ padding: '1.5rem', textAlign: 'center' }}>
                 <h3 style={{ marginBottom: 0 }}>Work from Anywhere</h3>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="card glass-panel" style={{ padding: 0, overflow: 'hidden' }}>
+            <motion.div 
+              className="card glass-panel" 
+              style={{ padding: 0, overflow: 'hidden' }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2, duration: 0.5 }}
+            >
               <div style={{ height: '200px', background: 'linear-gradient(45deg, #10b981, #3b82f6)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <Briefcase size={64} color="white" opacity={0.8} />
               </div>
               <div style={{ padding: '1.5rem', textAlign: 'center' }}>
                 <h3 style={{ marginBottom: 0 }}>Learning and Development</h3>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="card glass-panel" style={{ padding: 0, overflow: 'hidden' }}>
+            <motion.div 
+              className="card glass-panel" 
+              style={{ padding: 0, overflow: 'hidden' }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3, duration: 0.5 }}
+            >
               <div style={{ height: '200px', background: 'linear-gradient(45deg, #f59e0b, #ef4444)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <Heart size={64} color="white" opacity={0.8} />
               </div>
               <div style={{ padding: '1.5rem', textAlign: 'center' }}>
                 <h3 style={{ marginBottom: 0 }}>Incentive Opportunities</h3>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="card glass-panel" style={{ padding: 0, overflow: 'hidden' }}>
+            <motion.div 
+              className="card glass-panel" 
+              style={{ padding: 0, overflow: 'hidden' }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4, duration: 0.5 }}
+            >
               <div style={{ height: '200px', background: 'linear-gradient(45deg, #8b5cf6, #ec4899)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <Users size={64} color="white" opacity={0.8} />
               </div>
               <div style={{ padding: '1.5rem', textAlign: 'center' }}>
                 <h3 style={{ marginBottom: 0 }}>Open Door Policy</h3>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>

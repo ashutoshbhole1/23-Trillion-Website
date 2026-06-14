@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Smartphone, CheckCircle } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
 import ContactForm from '../../components/ContactForm';
 
 const MobileDevelopment = () => {

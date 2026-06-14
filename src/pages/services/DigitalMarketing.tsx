@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { LineChart } from 'lucide-react';
 import ContactForm from '../../components/ContactForm';
 
 const DigitalMarketing = () => {
