@@ -1,42 +1,83 @@
 import { motion } from 'framer-motion';
-import { Code, Database, Globe, LineChart, Shield, Smartphone } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Globe, Smartphone, PenTool, LineChart, Users, ArrowRight } from 'lucide-react';
 import ContactForm from '../components/ContactForm';
 
 const Services = () => {
   const servicesList = [
-    { icon: <Code size={24} />, title: 'Custom Software Development', desc: 'Enterprise-grade applications built with modern stacks, focusing on scalability, security, and exceptional performance tailored to your specific operational needs.' },
-    { icon: <Smartphone size={24} />, title: 'Mobile App Development', desc: 'Native and cross-platform mobile solutions that deliver seamless, engaging user experiences across all devices and operating systems.' },
-    { icon: <Globe size={24} />, title: 'Web Development', desc: 'High-conversion web platforms with stunning UI/UX, built on robust architectures ensuring reliability and fast load times.' },
-    { icon: <Database size={24} />, title: 'Data Engineering', desc: 'Transforming raw data into actionable insights with secure, scalable pipelines, enabling data-driven decision making across your organization.' },
-    { icon: <Shield size={24} />, title: 'Cybersecurity', desc: 'Comprehensive security audits, risk assessments, and robust implementations to protect your valuable digital assets from emerging threats.' },
-    { icon: <LineChart size={24} />, title: 'Digital Transformation', desc: 'Strategic consulting and technology adoption to guide legacy businesses into the digital age smoothly and efficiently.' },
+    { 
+      path: '/services/web-development',
+      icon: <Globe size={32} color="var(--primary)" />, 
+      title: 'Website & CMS Development', 
+      desc: 'Enhance your website ranking and visibility with our custom web and CMS solutions. We design eye-catching and fully responsive architectures.' 
+    },
+    { 
+      path: '/services/mobile-development',
+      icon: <Smartphone size={32} color="var(--primary)" />, 
+      title: 'Mobile Application Development', 
+      desc: 'Ease the user’s app experiences with multiplatform and native mobile applications that run seamlessly on all smartphones and gadgets.' 
+    },
+    { 
+      path: '/services/ui-ux-design',
+      icon: <PenTool size={32} color="var(--primary)" />, 
+      title: 'Hire Expert UI/UX Designers', 
+      desc: 'Keep users engaged with your brand. We deliver responsive pixel-perfect designs through our Discover, Define, Design, and Deliver process.' 
+    },
+    { 
+      path: '/services/digital-marketing',
+      icon: <LineChart size={32} color="var(--primary)" />, 
+      title: 'Digital Marketing', 
+      desc: 'Results-driven digital marketing that means business! Boost your online presence with our affordable SEO, SMO, and content packages.' 
+    },
+    { 
+      path: '/services/dedicated-developers',
+      icon: <Users size={32} color="var(--primary)" />, 
+      title: 'Dedicated Developers', 
+      desc: 'Hire expert developers as your extended team via remote, fixed-time, or hourly models to augment your local or international workforce.' 
+    }
   ];
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} style={{ paddingTop: '5rem' }}>
-      <section style={{ background: 'var(--bg-alt)' }}>
+      
+      {/* Page Header */}
+      <section style={{ background: 'var(--bg-alt)', paddingBottom: '3rem' }}>
         <div className="container">
-          <h1 className="page-title" style={{ textAlign: 'center' }}>Our <span className="gradient-text">Expertise</span></h1>
-          <p className="section-subtitle">We deliver end-to-end technology solutions tailored to your unique business challenges, ensuring you stay ahead in a rapidly evolving digital landscape.</p>
-          
-          <div className="grid" style={{ marginBottom: '4rem' }}>
+          <h1 className="page-title" style={{ textAlign: 'center' }}>Our <span className="gradient-text">Services</span></h1>
+          <p className="section-subtitle" style={{ maxWidth: '800px', margin: '0 auto' }}>We deliver end-to-end technology solutions tailored to your unique business challenges. Select a service below to learn more about how we can help you grow.</p>
+        </div>
+      </section>
+
+      <section style={{ padding: '5rem 0', background: 'var(--bg-color)' }}>
+        <div className="container">
+          <div className="grid">
             {servicesList.map((service, idx) => (
-              <motion.div 
-                key={idx} 
-                className="card glass-panel"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: idx * 0.1 }}
-              >
-                <div className="card-icon">{service.icon}</div>
-                <h3 className="card-title">{service.title}</h3>
-                <p className="card-desc">{service.desc}</p>
-              </motion.div>
+              <Link to={service.path} key={idx} style={{ textDecoration: 'none' }}>
+                <motion.div 
+                  className="card glass-panel"
+                  style={{ height: '100%', display: 'flex', flexDirection: 'column', cursor: 'pointer', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}
+                  whileHover={{ y: -10, boxShadow: '0 20px 40px rgba(0,0,0,0.4)' }}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: idx * 0.1 }}
+                >
+                  <div style={{ background: 'rgba(79, 70, 229, 0.1)', display: 'inline-flex', padding: '1rem', borderRadius: '50%', marginBottom: '1.5rem', alignSelf: 'flex-start' }}>
+                    {service.icon}
+                  </div>
+                  <h3 className="card-title" style={{ fontSize: '1.4rem', color: 'var(--text-primary)' }}>{service.title}</h3>
+                  <p className="card-desc" style={{ flexGrow: 1, color: 'var(--text-secondary)' }}>{service.desc}</p>
+                  
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary)', fontWeight: 600, marginTop: '1.5rem' }}>
+                    Read More <ArrowRight size={18} />
+                  </div>
+                </motion.div>
+              </Link>
             ))}
           </div>
         </div>
       </section>
+
       <ContactForm />
     </motion.div>
   );

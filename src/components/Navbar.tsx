@@ -37,6 +37,7 @@ const Navbar = () => {
           <Link to="/services" className={`nav-link ${location.pathname === '/services' ? 'active' : ''}`}>Services</Link>
           <Link to="/ai" className={`nav-link ${location.pathname === '/ai' ? 'active' : ''}`}>AI Solutions</Link>
           <Link to="/about" className={`nav-link ${location.pathname === '/about' ? 'active' : ''}`}>About</Link>
+          <Link to="/careers" className={`nav-link ${location.pathname === '/careers' ? 'active' : ''}`}>Careers</Link>
           <a href="#contact"><button className="glow-btn" style={{ padding: '0.6rem 1.25rem', fontSize: '0.9rem' }}>Let's Talk</button></a>
         </div>
         <button 
@@ -65,10 +66,11 @@ const Navbar = () => {
               exit={{ x: '100%' }}
               transition={{ type: 'spring', damping: 25, stiffness: 200 }}
             >
-              <Link to="/" className={`mobile-nav-link ${location.pathname === '/' ? 'active' : ''}`}>Home</Link>
-              <Link to="/services" className={`mobile-nav-link ${location.pathname === '/services' ? 'active' : ''}`}>Services</Link>
-              <Link to="/ai" className={`mobile-nav-link ${location.pathname === '/ai' ? 'active' : ''}`}>AI Solutions</Link>
-              <Link to="/about" className={`mobile-nav-link ${location.pathname === '/about' ? 'active' : ''}`}>About</Link>
+              <Link to="/" className={`mobile-nav-link ${location.pathname === '/' ? 'active' : ''}`} onClick={() => setIsOpen(false)}>Home</Link>
+            <Link to="/services" className={`mobile-nav-link ${location.pathname === '/services' ? 'active' : ''}`} onClick={() => setIsOpen(false)}>Services</Link>
+            <Link to="/ai" className={`mobile-nav-link ${location.pathname === '/ai' ? 'active' : ''}`} onClick={() => setIsOpen(false)}>AI Solutions</Link>
+            <Link to="/about" className={`mobile-nav-link ${location.pathname === '/about' ? 'active' : ''}`} onClick={() => setIsOpen(false)}>About</Link>
+            <Link to="/careers" className={`mobile-nav-link ${location.pathname === '/careers' ? 'active' : ''}`} onClick={() => setIsOpen(false)}>Careers</Link>
               <a href="#contact" onClick={() => setIsOpen(false)}>
                 <button className="glow-btn" style={{ width: '100%', marginTop: '1rem', padding: '0.8rem' }}>Let's Talk</button>
               </a>

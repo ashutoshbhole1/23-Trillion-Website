@@ -24,17 +24,20 @@ const Footer = () => (
           <h4 className="footer-title">Company</h4>
           <ul className="footer-links">
             <li><Link to="/about">About Us</Link></li>
-            <li><Link to="/about">Careers</Link></li>
+            <li><Link to="/careers">Careers</Link></li>
             <li><Link to="/about">Blog</Link></li>
-            <li><Link to="/about">Contact</Link></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <div>
           <h4 className="footer-title">Connect</h4>
           <ul className="footer-links">
+            <li><a href="#">WhatsApp <ArrowUpRight size={14} style={{display:'inline', marginLeft:'4px'}}/></a></li>
+            <li><a href="#">Skype <ArrowUpRight size={14} style={{display:'inline', marginLeft:'4px'}}/></a></li>
+            <li><a href="#">Facebook <ArrowUpRight size={14} style={{display:'inline', marginLeft:'4px'}}/></a></li>
+            <li><a href="#">Instagram <ArrowUpRight size={14} style={{display:'inline', marginLeft:'4px'}}/></a></li>
             <li><a href="#">LinkedIn <ArrowUpRight size={14} style={{display:'inline', marginLeft:'4px'}}/></a></li>
             <li><a href="#">Twitter <ArrowUpRight size={14} style={{display:'inline', marginLeft:'4px'}}/></a></li>
-            <li><a href="#">GitHub <ArrowUpRight size={14} style={{display:'inline', marginLeft:'4px'}}/></a></li>
           </ul>
         </div>
       </div>

@@ -27,14 +27,26 @@ const About = () => {
               viewport={{ once: true }}
             >
               <h1 className="page-title" style={{ textAlign: 'left' }}>
-                Building <span className="gradient-text">Trust</span> Through Excellence
+                ABOUT US- <span className="gradient-text">Who We Are</span>
               </h1>
-              <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem', fontSize: '1.125rem' }}>
-                At 23 Trillion, we believe that great software is built on clear communication and an intimate understanding of our clients' needs.
+              <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem', fontSize: '1.05rem', lineHeight: 1.6 }}>
+                23 Trillion started as an IT outsourcing company in 2022, providing expertise-based services to global clients. As our relationship with clients evolved, we aimed to provide value to clients beyond expertise through innovative solutions, processes, and people.
               </p>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '1.125rem' }}>
-                Our approach is transparent. Everything is mentioned very clearly to ensure that the client is always in the loop. We don't just write code; we partner with you to engineer the digital future of your enterprise.
+              <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem', fontSize: '1.05rem', lineHeight: 1.6 }}>
+                23 Trillion is an Information and Technology organization that provides a relaxed, calm and working environment for its employees. Our motive is to keep the atmosphere healthy and represent "I as US". Employees are the branches of an organization that water it with their constant support, coordination and hard work to grow up as a tree. 23 Trillion is a family more than professional employees.
               </p>
+              <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem', fontSize: '1.05rem', lineHeight: 1.6 }}>
+                A family-friendly environment boosts up the team to perform the task creatively and professionally. We always reward every member with their excellent enthusiastic performance and contribution to accomplishing new goals. We ensure to make our clients happy with the best resolutions and celebrate the joy of the success.
+              </p>
+              
+              <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', color: 'var(--text-primary)' }}>We believe in-</h3>
+              <ul style={{ color: 'var(--text-secondary)', listStyleType: 'disc', paddingLeft: '1.5rem', lineHeight: 1.8, fontSize: '1.05rem' }}>
+                <li>Work with transparency and teamwork.</li>
+                <li>Learning from the new challenges.</li>
+                <li>Numerous opportunities to showcase talent.</li>
+                <li>Meet up with the Commitments.</li>
+                <li>Extremely Proactive Team</li>
+              </ul>
             </motion.div>
           </div>
 

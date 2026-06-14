@@ -16,13 +16,13 @@ const Home = () => (
           transition={{ duration: 0.8 }}
         >
           <div style={{ display: 'inline-block', padding: '0.5rem 1rem', background: 'rgba(79, 70, 229, 0.1)', color: 'var(--primary)', borderRadius: '9999px', fontSize: '0.875rem', fontWeight: 600, marginBottom: '1.5rem' }}>
-            Premium Engineering Agency
+            23 Trillion - Client Success our growth
           </div>
           <h1 className="hero-title">
-            Engineering the <span className="gradient-text">Future</span> of Digital Business
+            Welcome to the <span className="gradient-text">23 Trillion</span>
           </h1>
           <p className="hero-desc">
-            We are a premium IT and software development agency empowering global enterprises with design-led engineering, next-generation AI, and scalable cloud solutions.
+            23 Trillion is a fast-growing IT company that provides Dedicated resources per your daily needs. Digital space for us is about technology and people. At 23 Trillion we combined specialist knowledge with industry experience and as a company, we focus on long-term nearshoring. We created dedicated solutions for small, mid-sized, and large companies.
           </p>
           <div className="hero-buttons">
             <Link to="/services">
@@ -40,31 +40,24 @@ const Home = () => (
       </div>
     </section>
 
-    {/* Snapshot of About */}
+    {/* WHY 23 Trillion */}
     <section style={{ padding: '6rem 0', background: 'var(--bg-alt)' }}>
       <div className="container">
-        <div className="responsive-grid-2">
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="section-title" style={{ textAlign: 'left', marginBottom: '1rem' }}>
-              Who <span className="gradient-text">We Are</span>
-            </h2>
-            <p style={{ color: 'var(--text-secondary)', fontSize: '1.125rem', marginBottom: '1.5rem' }}>
-              At 23 Trillion, we bridge the gap between complex business challenges and scalable technology. With a relentless focus on excellence, we partner with enterprises to engineer secure and high-performing digital platforms.
-            </p>
-            <Link to="/about" style={{ color: 'var(--primary)', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              Discover Our Approach <ArrowRight size={18} />
-            </Link>
+        <h2 className="section-title" style={{ textAlign: 'center', marginBottom: '3rem' }}>
+          WHY <span className="gradient-text">23 Trillion?</span>
+        </h2>
+        <div className="grid">
+          <motion.div className="card glass-panel" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+            <h3 className="card-title">Fast Onboarding</h3>
+            <p className="card-desc">We onboard fiery fast. We have a great team of highly expertise engineers. This makes us more agile and unique in handling onboarding easily while bringing in a fresh perspective and new ideas.</p>
           </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-          >
-            <img src="/about_office.png" alt="Our Team" className="content-image" style={{ width: '100%', height: 'auto', maxHeight: '400px', objectFit: 'cover' }} />
+          <motion.div className="card glass-panel" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}>
+            <h3 className="card-title">Flexible Contracts</h3>
+            <p className="card-desc">We have a Flexible contract that fits your needs. 4 weeks cancelation. 3 - 10 days to kick off from the contract signing date. Yes, we can start ASAP. 2 weeks onboarding time for our PMs. We start contributing fast.</p>
+          </motion.div>
+          <motion.div className="card glass-panel" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }}>
+            <h3 className="card-title">Ambitious People</h3>
+            <p className="card-desc">23 Trillion is a place full of ambitious people: we have a lot of freedom but also a very strong result-oriented mindset — what matters is getting things done. Our goal is simple; to protect your text.</p>
           </motion.div>
         </div>
       </div>
