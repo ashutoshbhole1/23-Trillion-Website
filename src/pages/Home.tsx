@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Code, Cpu, Database, ArrowRight } from 'lucide-react';
+import { Globe, Smartphone, PenTool, LineChart, Users, ArrowRight } from 'lucide-react';
 import ContactForm from '../components/ContactForm';
 
 const Home = () => (
@@ -76,21 +76,46 @@ const Home = () => (
           </Link>
         </div>
         <div className="grid">
-          <div className="card glass-panel">
-            <div className="card-icon"><Code size={24} /></div>
-            <h3 className="card-title">Custom Software</h3>
-            <p className="card-desc">Enterprise-grade applications built with modern stacks, focusing on scalability and performance.</p>
-          </div>
-          <div className="card glass-panel">
-            <div className="card-icon"><Cpu size={24} /></div>
-            <h3 className="card-title">AI Integration</h3>
-            <p className="card-desc">Intelligent systems that automate workflows, predict trends, and create personalized experiences.</p>
-          </div>
-          <div className="card glass-panel">
-            <div className="card-icon"><Database size={24} /></div>
-            <h3 className="card-title">Data Engineering</h3>
-            <p className="card-desc">Transforming raw data into actionable insights with secure and scalable pipelines.</p>
-          </div>
+          <Link to="/services/web-development" style={{ textDecoration: 'none' }}>
+            <div className="card glass-panel" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+              <div className="card-icon"><Globe size={24} /></div>
+              <h3 className="card-title">Website & CMS</h3>
+              <p className="card-desc" style={{ flexGrow: 1 }}>Enhance your website ranking and visibility with custom web and CMS solutions.</p>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary)', fontWeight: 600, marginTop: '1.5rem' }}>Read More <ArrowRight size={18} /></div>
+            </div>
+          </Link>
+          <Link to="/services/mobile-development" style={{ textDecoration: 'none' }}>
+            <div className="card glass-panel" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+              <div className="card-icon"><Smartphone size={24} /></div>
+              <h3 className="card-title">Mobile Apps</h3>
+              <p className="card-desc" style={{ flexGrow: 1 }}>Ease the user’s app experiences with multiplatform and native mobile applications.</p>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary)', fontWeight: 600, marginTop: '1.5rem' }}>Read More <ArrowRight size={18} /></div>
+            </div>
+          </Link>
+          <Link to="/services/ui-ux-design" style={{ textDecoration: 'none' }}>
+            <div className="card glass-panel" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+              <div className="card-icon"><PenTool size={24} /></div>
+              <h3 className="card-title">UI/UX Design</h3>
+              <p className="card-desc" style={{ flexGrow: 1 }}>Keep users engaged with your brand with responsive pixel-perfect interactive designs.</p>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary)', fontWeight: 600, marginTop: '1.5rem' }}>Read More <ArrowRight size={18} /></div>
+            </div>
+          </Link>
+          <Link to="/services/digital-marketing" style={{ textDecoration: 'none' }}>
+            <div className="card glass-panel" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+              <div className="card-icon"><LineChart size={24} /></div>
+              <h3 className="card-title">Digital Marketing</h3>
+              <p className="card-desc" style={{ flexGrow: 1 }}>Results-driven digital marketing. Boost your online presence with SEO and SMO packages.</p>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary)', fontWeight: 600, marginTop: '1.5rem' }}>Read More <ArrowRight size={18} /></div>
+            </div>
+          </Link>
+          <Link to="/services/dedicated-developers" style={{ textDecoration: 'none' }}>
+            <div className="card glass-panel" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+              <div className="card-icon"><Users size={24} /></div>
+              <h3 className="card-title">Dedicated Team</h3>
+              <p className="card-desc" style={{ flexGrow: 1 }}>Hire expert developers as your extended team via remote, fixed-time, or hourly models.</p>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary)', fontWeight: 600, marginTop: '1.5rem' }}>Read More <ArrowRight size={18} /></div>
+            </div>
+          </Link>
         </div>
       </div>
     </section>

@@ -353,6 +353,22 @@ section {
   font-size: clamp(2rem, 6vw, 3.5rem);
 }
 
+h3 {
+  font-size: clamp(1.2rem, 4vw, 1.5rem);
+}
+
+h4 {
+  font-size: clamp(1.1rem, 3vw, 1.25rem);
+}
+
+p {
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+}
+
+li {
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+}
+
 .responsive-grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
