@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Cpu, BrainCircuit, BarChart3, Users, Cloud, Zap, CheckCircle } from 'lucide-react';
-import ContactForm from '../components/ContactForm';
+import ContactForm from '../../components/ContactForm';
 
 const AISolutions = () => {
   return (

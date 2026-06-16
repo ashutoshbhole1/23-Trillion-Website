@@ -155,7 +155,7 @@ section {
   min-height: 90vh;
   display: flex;
   align-items: center;
-  padding-top: 5rem;
+  padding-top: 10rem;
   position: relative;
 }
 
@@ -432,7 +432,7 @@ li {
   
   .hero {
     min-height: auto;
-    padding-top: 7rem;
+    padding-top: 10rem;
     padding-bottom: 4rem;
   }
   

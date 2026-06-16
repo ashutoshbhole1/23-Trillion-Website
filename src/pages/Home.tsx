@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Globe, Smartphone, PenTool, LineChart, Users, ArrowRight } from 'lucide-react';
+import { Globe, Smartphone, PenTool, LineChart, Users, ArrowRight, Cpu } from 'lucide-react';
 import ContactForm from '../components/ContactForm';
 
 const Home = () => (
@@ -113,6 +113,14 @@ const Home = () => (
               <div className="card-icon"><Users size={24} /></div>
               <h3 className="card-title">Dedicated Team</h3>
               <p className="card-desc" style={{ flexGrow: 1 }}>Hire expert developers as your extended team via remote, fixed-time, or hourly models.</p>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary)', fontWeight: 600, marginTop: '1.5rem' }}>Read More <ArrowRight size={18} /></div>
+            </div>
+          </Link>
+          <Link to="/services/ai" style={{ textDecoration: 'none' }}>
+            <div className="card glass-panel" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+              <div className="card-icon"><Cpu size={24} /></div>
+              <h3 className="card-title">AI Solutions</h3>
+              <p className="card-desc" style={{ flexGrow: 1 }}>Empower your business with cutting-edge artificial intelligence, machine learning, and automation.</p>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary)', fontWeight: 600, marginTop: '1.5rem' }}>Read More <ArrowRight size={18} /></div>
             </div>
           </Link>

@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Globe, Smartphone, PenTool, LineChart, Users, ArrowRight } from 'lucide-react';
+import { Globe, Smartphone, PenTool, LineChart, Users, ArrowRight, Cpu } from 'lucide-react';
 import ContactForm from '../components/ContactForm';
 
 const Services = () => {
@@ -34,6 +34,12 @@ const Services = () => {
       icon: <Users size={32} color="var(--primary)" />, 
       title: 'Dedicated Developers', 
       desc: 'Hire expert developers as your extended team via remote, fixed-time, or hourly models to augment your local or international workforce.' 
+    },
+    { 
+      path: '/services/ai',
+      icon: <Cpu size={32} color="var(--primary)" />, 
+      title: 'AI Solutions', 
+      desc: 'Empower your business with cutting-edge artificial intelligence, machine learning, and automation.' 
     }
   ];
 
