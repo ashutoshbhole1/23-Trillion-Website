@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Star } from 'lucide-react';
+
 import ContactForm from '../components/ContactForm';
 
 const About = () => {
