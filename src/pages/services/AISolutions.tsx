@@ -7,15 +7,22 @@ const AISolutions = () => {
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} style={{ paddingTop: '5rem' }}>
       
       {/* Page Header */}
-      <section style={{ background: 'var(--bg-alt)', paddingBottom: '2rem' }}>
+      <section style={{ background: 'var(--bg-alt)', paddingBottom: '4rem' }}>
         <div className="container">
-          <div style={{ display: 'inline-block', padding: '0.5rem 1rem', background: 'rgba(79, 70, 229, 0.1)', color: 'var(--primary)', borderRadius: '9999px', fontSize: '0.875rem', fontWeight: 600, marginBottom: '1rem' }}>
-            Next-Gen Tech
+          <div className="responsive-grid-2" style={{ alignItems: 'center' }}>
+            <div>
+              <div style={{ display: 'inline-block', padding: '0.5rem 1rem', background: 'rgba(216, 76, 135, 0.1)', color: 'var(--primary)', borderRadius: '9999px', fontSize: '0.875rem', fontWeight: 600, marginBottom: '1rem' }}>
+                Next-Gen Tech
+              </div>
+              <h1 className="page-title" style={{ textAlign: 'left' }}>Intelligent <span className="gradient-text">Solutions</span></h1>
+              <p className="section-subtitle" style={{ textAlign: 'left', maxWidth: '800px', marginBottom: 0 }}>
+                We develop smart, scalable, and future-proof websites, applications, and automated systems that foster measurable business growth using Advanced AI and Data Analytics.
+              </p>
+            </div>
+            <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
+              <img src="/Services/AI%20solutions.png" alt="AI Solutions" className="content-image" style={{ width: '100%', height: 'auto', maxHeight: '400px', objectFit: 'cover', borderRadius: '1rem', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }} />
+            </motion.div>
           </div>
-          <h1 className="page-title" style={{ textAlign: 'left' }}>Intelligent <span className="gradient-text">Solutions</span></h1>
-          <p className="section-subtitle" style={{ textAlign: 'left', maxWidth: '800px' }}>
-            We develop smart, scalable, and future-proof websites, applications, and automated systems that foster measurable business growth using Advanced AI and Data Analytics.
-          </p>
         </div>
       </section>
 
@@ -53,7 +60,7 @@ const AISolutions = () => {
                 <li><CheckCircle size={16} style={{ display: 'inline', marginRight: '8px', color: 'var(--primary)' }}/> <strong>E-Commerce Solutions:</strong> Product recommendations & automation.</li>
                 <li><CheckCircle size={16} style={{ display: 'inline', marginRight: '8px', color: 'var(--primary)' }}/> <strong>Landing Pages with AI:</strong> Optimal conversions & performance.</li>
               </ul>
-              <div style={{ marginTop: '1.5rem', padding: '1rem', background: 'rgba(79, 70, 229, 0.05)', borderRadius: '8px', borderLeft: '4px solid var(--primary)' }}>
+              <div style={{ marginTop: '1.5rem', padding: '1rem', background: 'rgba(216, 76, 135, 0.05)', borderRadius: '8px', borderLeft: '4px solid var(--primary)' }}>
                 <strong>Case Study:</strong> A prominent fashion retailer increased online sales by 320% utilizing our AI-driven e-commerce platform and personalization.
               </div>
             </div>

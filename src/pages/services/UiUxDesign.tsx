@@ -8,7 +8,7 @@ const UiUxDesign = () => {
       {/* Page Header */}
       <section style={{ background: 'var(--bg-alt)', paddingBottom: '2rem' }}>
         <div className="container">
-          <div style={{ display: 'inline-block', padding: '0.5rem 1rem', background: 'rgba(79, 70, 229, 0.1)', color: 'var(--primary)', borderRadius: '9999px', fontWeight: 600, marginBottom: '1rem' }}>
+          <div style={{ display: 'inline-block', padding: '0.5rem 1rem', background: 'rgba(216, 76, 135, 0.1)', color: 'var(--primary)', borderRadius: '9999px', fontWeight: 600, marginBottom: '1rem' }}>
             Service Details
           </div>
           <h1 className="page-title" style={{ textAlign: 'left' }}>Hire Expert <span className="gradient-text">UI/UX Designers</span></h1>
@@ -26,7 +26,7 @@ const UiUxDesign = () => {
               </p>
             </div>
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-              <img src="/uiux_design.png" alt="UI/UX Design" className="content-image" style={{ width: '100%', height: 'auto', maxHeight: '400px', objectFit: 'cover' }} />
+              <img src="/Services/UI%20ux.jpg" alt="UI/UX Design" className="content-image" style={{ width: '100%', height: 'auto', maxHeight: '400px', objectFit: 'cover', borderRadius: '1rem' }} />
             </motion.div>
           </div>
 

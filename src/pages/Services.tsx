@@ -7,37 +7,37 @@ const Services = () => {
   const servicesList = [
     { 
       path: '/services/web-development',
-      icon: <Globe size={32} color="var(--primary)" />, 
+      image: '/Services/Webdevelopment.webp', 
       title: 'Website & CMS Development', 
       desc: 'Enhance your website ranking and visibility with our custom web and CMS solutions. We design eye-catching and fully responsive architectures.' 
     },
     { 
       path: '/services/mobile-development',
-      icon: <Smartphone size={32} color="var(--primary)" />, 
+      image: '/Services/App%20development.jpg', 
       title: 'Mobile Application Development', 
       desc: 'Ease the user’s app experiences with multiplatform and native mobile applications that run seamlessly on all smartphones and gadgets.' 
     },
     { 
       path: '/services/ui-ux-design',
-      icon: <PenTool size={32} color="var(--primary)" />, 
+      image: '/Services/UI%20ux.jpg', 
       title: 'Hire Expert UI/UX Designers', 
       desc: 'Keep users engaged with your brand. We deliver responsive pixel-perfect designs through our Discover, Define, Design, and Deliver process.' 
     },
     { 
       path: '/services/digital-marketing',
-      icon: <LineChart size={32} color="var(--primary)" />, 
+      image: '/Services/digital%20marketing.jpg', 
       title: 'Digital Marketing', 
       desc: 'Results-driven digital marketing that means business! Boost your online presence with our affordable SEO, SMO, and content packages.' 
     },
     { 
       path: '/services/dedicated-developers',
-      icon: <Users size={32} color="var(--primary)" />, 
+      image: '/Services/dedicated%20developers.jpg', 
       title: 'Dedicated Developers', 
       desc: 'Hire expert developers as your extended team via remote, fixed-time, or hourly models to augment your local or international workforce.' 
     },
     { 
       path: '/services/ai',
-      icon: <Cpu size={32} color="var(--primary)" />, 
+      image: '/Services/AI%20solutions.png', 
       title: 'AI Solutions', 
       desc: 'Empower your business with cutting-edge artificial intelligence, machine learning, and automation.' 
     }
@@ -68,8 +68,8 @@ const Services = () => {
                   viewport={{ once: true }}
                   transition={{ delay: idx * 0.1 }}
                 >
-                  <div style={{ background: 'rgba(79, 70, 229, 0.1)', display: 'inline-flex', padding: '1rem', borderRadius: '50%', marginBottom: '1.5rem', alignSelf: 'flex-start' }}>
-                    {service.icon}
+                  <div style={{ width: '100%', height: '180px', marginBottom: '1.5rem', borderRadius: '0.5rem', overflow: 'hidden' }}>
+                    <img src={service.image} alt={service.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   </div>
                   <h3 className="card-title" style={{ fontSize: '1.4rem', color: 'var(--text-primary)' }}>{service.title}</h3>
                   <p className="card-desc" style={{ flexGrow: 1, color: 'var(--text-secondary)' }}>{service.desc}</p>

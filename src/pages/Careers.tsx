@@ -14,6 +14,8 @@ const Careers = () => {
     { title: 'Node.js Developer', exp: '3-5 years' },
     { title: 'Python Developer', exp: '5-7 years' },
     { title: 'Java Developer', exp: '3-5, 5-7 years' },
+    { title: 'WordPress & Shopify Expert', exp: '3-5 years' },
+    { title: 'AI & ML Developer', exp: '5-7 years' },
   ];
 
   return (
@@ -71,9 +73,12 @@ const Careers = () => {
                     <Briefcase size={16} /> Experience: {job.exp}
                   </div>
                 </div>
-                <button style={{ background: 'transparent', border: '1px solid var(--primary)', color: 'var(--primary)', padding: '0.5rem 1rem', borderRadius: '4px', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', fontWeight: 600 }}>
+                <a 
+                  href={`mailto:hr@23trillion.com?subject=Application%20for%20${encodeURIComponent(job.title)}&body=Please%20attach%20your%20resume%20below.%0A%0A`}
+                  style={{ textDecoration: 'none', background: 'transparent', border: '1px solid var(--primary)', color: 'var(--primary)', padding: '0.5rem 1rem', borderRadius: '4px', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', fontWeight: 600 }}
+                >
                   Apply Now <ArrowRight size={16} />
-                </button>
+                </a>
               </div>
             ))}
           </div>

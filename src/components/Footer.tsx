@@ -11,19 +11,19 @@ const Footer = () => (
     <div className="container">
       <div className="footer-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '3rem', marginBottom: '4rem' }}>
         <div>
-          <div className="logo gradient-text" style={{ marginBottom: '1.5rem', fontSize: '1.5rem', fontWeight: 800 }}>23 Trillion</div>
+          <img src="/23%20trillion%20transparent%20logo.png" alt="23 Trillion" style={{ height: '70px', marginBottom: '1rem', objectFit: 'contain' }} />
           <p style={{ color: 'var(--footer-text)', fontSize: '0.95rem', lineHeight: 1.6, marginBottom: '2rem' }}>
             Empowering businesses with world-class technology solutions, from intuitive web applications to advanced AI systems.
           </p>
           <div style={{ display: 'flex', gap: '1rem' }}>
-            <a href="#" style={{ color: 'white', background: 'rgba(255,255,255,0.1)', padding: '0.5rem', borderRadius: '50%', display: 'flex', transition: 'background 0.3s' }} onMouseOver={e => e.currentTarget.style.background = 'var(--primary)'} onMouseOut={e => e.currentTarget.style.background = 'rgba(255,255,255,0.1)'}><Facebook size={20} /></a>
-            <a href="#" style={{ color: 'white', background: 'rgba(255,255,255,0.1)', padding: '0.5rem', borderRadius: '50%', display: 'flex', transition: 'background 0.3s' }} onMouseOver={e => e.currentTarget.style.background = 'var(--primary)'} onMouseOut={e => e.currentTarget.style.background = 'rgba(255,255,255,0.1)'}><Twitter size={20} /></a>
-            <a href="#" style={{ color: 'white', background: 'rgba(255,255,255,0.1)', padding: '0.5rem', borderRadius: '50%', display: 'flex', transition: 'background 0.3s' }} onMouseOver={e => e.currentTarget.style.background = 'var(--primary)'} onMouseOut={e => e.currentTarget.style.background = 'rgba(255,255,255,0.1)'}><Instagram size={20} /></a>
-            <a href="#" style={{ color: 'white', background: 'rgba(255,255,255,0.1)', padding: '0.5rem', borderRadius: '50%', display: 'flex', transition: 'background 0.3s' }} onMouseOver={e => e.currentTarget.style.background = 'var(--primary)'} onMouseOut={e => e.currentTarget.style.background = 'rgba(255,255,255,0.1)'}><Linkedin size={20} /></a>
+            <a href="https://www.facebook.com/profile.php?id=100087882122780&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-primary)', background: 'rgba(0,0,0,0.05)', padding: '0.5rem', borderRadius: '50%', display: 'flex', transition: 'all 0.3s' }} onMouseOver={e => { e.currentTarget.style.background = 'var(--primary)'; e.currentTarget.style.color = 'white'; }} onMouseOut={e => { e.currentTarget.style.background = 'rgba(0,0,0,0.05)'; e.currentTarget.style.color = 'var(--text-primary)'; }}><Facebook size={20} /></a>
+            <a href="https://twitter.com/23Trillion?t=7LuMK2WM5Cs-Way-y1tEhg&s=09" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-primary)', background: 'rgba(0,0,0,0.05)', padding: '0.5rem', borderRadius: '50%', display: 'flex', transition: 'all 0.3s' }} onMouseOver={e => { e.currentTarget.style.background = 'var(--primary)'; e.currentTarget.style.color = 'white'; }} onMouseOut={e => { e.currentTarget.style.background = 'rgba(0,0,0,0.05)'; e.currentTarget.style.color = 'var(--text-primary)'; }}><Twitter size={20} /></a>
+            <a href="https://instagram.com/23_trillion?igshid=ZDdkNTZiNTM=" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-primary)', background: 'rgba(0,0,0,0.05)', padding: '0.5rem', borderRadius: '50%', display: 'flex', transition: 'all 0.3s' }} onMouseOver={e => { e.currentTarget.style.background = 'var(--primary)'; e.currentTarget.style.color = 'white'; }} onMouseOut={e => { e.currentTarget.style.background = 'rgba(0,0,0,0.05)'; e.currentTarget.style.color = 'var(--text-primary)'; }}><Instagram size={20} /></a>
+            <a href="https://www.linkedin.com/company/23-trillion/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-primary)', background: 'rgba(0,0,0,0.05)', padding: '0.5rem', borderRadius: '50%', display: 'flex', transition: 'all 0.3s' }} onMouseOver={e => { e.currentTarget.style.background = 'var(--primary)'; e.currentTarget.style.color = 'white'; }} onMouseOut={e => { e.currentTarget.style.background = 'rgba(0,0,0,0.05)'; e.currentTarget.style.color = 'var(--text-primary)'; }}><Linkedin size={20} /></a>
           </div>
         </div>
         <div>
-          <h4 style={{ color: 'white', marginBottom: '1.5rem', fontSize: '1.1rem' }}>Services</h4>
+          <h4 style={{ color: 'var(--text-primary)', marginBottom: '1.5rem', fontSize: '1.1rem' }}>Services</h4>
           <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
             <li><Link to="/services/web-development" style={{ color: 'var(--footer-text)', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={e => e.currentTarget.style.color = 'var(--primary)'} onMouseOut={e => e.currentTarget.style.color = 'var(--footer-text)'}>Website & CMS</Link></li>
             <li><Link to="/services/mobile-development" style={{ color: 'var(--footer-text)', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={e => e.currentTarget.style.color = 'var(--primary)'} onMouseOut={e => e.currentTarget.style.color = 'var(--footer-text)'}>Mobile Apps</Link></li>
@@ -33,7 +33,7 @@ const Footer = () => (
           </ul>
         </div>
         <div>
-          <h4 style={{ color: 'white', marginBottom: '1.5rem', fontSize: '1.1rem' }}>Company</h4>
+          <h4 style={{ color: 'var(--text-primary)', marginBottom: '1.5rem', fontSize: '1.1rem' }}>Company</h4>
           <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
             <li><Link to="/about" style={{ color: 'var(--footer-text)', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={e => e.currentTarget.style.color = 'var(--primary)'} onMouseOut={e => e.currentTarget.style.color = 'var(--footer-text)'}>About Us</Link></li>
             <li><Link to="/careers" style={{ color: 'var(--footer-text)', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={e => e.currentTarget.style.color = 'var(--primary)'} onMouseOut={e => e.currentTarget.style.color = 'var(--footer-text)'}>Careers</Link></li>
@@ -42,7 +42,7 @@ const Footer = () => (
           </ul>
         </div>
         <div>
-          <h4 style={{ color: 'white', marginBottom: '1.5rem', fontSize: '1.1rem' }}>Contact Us</h4>
+          <h4 style={{ color: 'var(--text-primary)', marginBottom: '1.5rem', fontSize: '1.1rem' }}>Contact Us</h4>
           <p style={{ color: 'var(--footer-text)', fontSize: '0.95rem', marginBottom: '1.5rem' }}>Get in touch with us for world-class technology solutions.</p>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: '1.5rem', color: 'var(--footer-text)', fontSize: '0.9rem' }}>
             <Mail size={16} /> sales@23trillion.com
@@ -52,9 +52,10 @@ const Footer = () => (
           </div>
         </div>
       </div>
-      <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '2rem', textAlign: 'center', fontSize: '0.9rem', color: 'var(--footer-text)' }}>
+      <div style={{ borderTop: '1px solid rgba(0,0,0,0.1)', paddingTop: '2rem', textAlign: 'center', fontSize: '0.9rem', color: 'var(--footer-text)' }}>
         &copy; {new Date().getFullYear()} 23 Trillion. All rights reserved. Built for modern enterprises.
       </div>
+      {/* <h1>Designed & developed by KANHA-ASHU TECH <a href="https://kanhaashu.com">Ashutosh Bhole</a></h1> */}
     </div>
   </footer>
 );

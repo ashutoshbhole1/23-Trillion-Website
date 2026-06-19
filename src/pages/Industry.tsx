@@ -1,56 +1,82 @@
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import ContactForm from '../components/ContactForm';
 
 const Industry = () => {
+  const navigate = useNavigate();
   const industriesList = [
     {
-      title: 'Healthcare',
+      title: 'Healthcare Software',
       desc: 'Smart Analytics | Data-Powered Healthcare | Personalized Health & Optimized Outcomes',
       gradient: 'linear-gradient(135deg, #f0fdf4 0%, #10b981 100%)',
       imgSrc: '/Industry/healthcare.png',
       textColor: '#1f2937',
-      btnDark: true
+      btnDark: true,
+      slug: 'healthcare-software-development'
     },
     {
-      title: 'Finance',
+      title: 'Finance Tech Solutions',
       desc: 'AI-Driven Decisions | Smarter Lending | Optimized Financial Outcomes',
       gradient: 'linear-gradient(135deg, #f8fafc 0%, #ef4444 100%)',
-      imgSrc: '/Industry/finance.png',
+      imgSrc: '/Industry/finance - Industry.png',
       textColor: '#1f2937',
-      btnDark: false
+      btnDark: false,
+      slug: 'finance-technology-solutions'
     },
     {
-      title: 'Sustainability',
-      desc: 'ESG Solutions | Ethical Traceability | Resource Conservation & Sustainable Practices',
-      gradient: 'linear-gradient(135deg, #f8fafc 0%, #eab308 100%)',
-      imgSrc: '/Industry/sustainability.png',
-      textColor: '#1f2937',
-      btnDark: false
-    },
-    {
-      title: 'Education',
+      title: 'Education Technology',
       desc: 'AI-Enhanced Learning | Personalized Growth | Future-Ready Graduates',
       gradient: 'linear-gradient(135deg, #f1f5f9 0%, #8b5cf6 100%)',
       imgSrc: '/Industry/education.png',
       textColor: '#1f2937',
-      btnDark: false
+      btnDark: false,
+      slug: 'education-technology-development'
     },
     {
-      title: 'Retail & E-commerce',
+      title: 'Food Delivery Platforms',
+      desc: 'Smart Scalable Apps | Advanced Admin Panels | Real-Time Tracking',
+      gradient: 'linear-gradient(135deg, #fff1f2 0%, #f43f5e 100%)',
+      imgSrc: '/Industry/food delivery - Industry.png',
+      textColor: '#1f2937',
+      btnDark: true,
+      slug: 'food-delivery-platforms'
+    },
+    {
+      title: 'Ecommerce Services',
       desc: 'Smart Inventory | Predictive Analytics | Seamless Customer Experiences',
       gradient: 'linear-gradient(135deg, #fffbeb 0%, #f59e0b 100%)',
       imgSrc: '/Industry/ecommerce.png',
       textColor: '#1f2937',
-      btnDark: false
+      btnDark: false,
+      slug: 'ecommerce-development-services'
     },
     {
-      title: 'Real Estate',
+      title: 'Real Estate Technology',
       desc: 'Smart Property Management | Virtual Tours | AI-Powered Valuations',
       gradient: 'linear-gradient(135deg, #eff6ff 0%, #3b82f6 100%)',
       imgSrc: '/Industry/realestate.png',
       textColor: '#1f2937',
-      btnDark: true
+      btnDark: true,
+      slug: 'real-estate-technology-solutions'
+    },
+    {
+      title: 'AI & Machine Learning',
+      desc: 'Predictive Analytics | Computer Vision | Intelligent Chatbots',
+      gradient: 'linear-gradient(135deg, #f5f3ff 0%, #c084fc 100%)',
+      imgSrc: '/Industry/ai and ml solution - industry.png',
+      textColor: '#1f2937',
+      btnDark: true,
+      slug: 'ai-machine-learning-solutions'
+    },
+    {
+      title: 'ERP Development',
+      desc: 'Cloud-based ERP | Real-time Reporting | Workflow Automation',
+      gradient: 'linear-gradient(135deg, #f0f9ff 0%, #0ea5e9 100%)',
+      imgSrc: '/Industry/ERP - Industry.png',
+      textColor: '#1f2937',
+      btnDark: true,
+      slug: 'erp-development-services'
     }
   ];
 
@@ -100,7 +126,9 @@ const Industry = () => {
                 </div>
 
                 <div style={{ position: 'relative', zIndex: 10 }}>
-                  <button style={{
+                  <button 
+                    onClick={() => navigate(`/industry/${industry.slug}`)}
+                    style={{
                     background: industry.btnDark ? '#000' : 'rgba(255,255,255,0.4)',
                     color: industry.btnDark ? '#fff' : '#000',
                     border: 'none',
@@ -126,8 +154,8 @@ const Industry = () => {
                   style={{
                     position: 'absolute',
                     bottom: 0,
-                    right: industry.title === 'Education' || industry.title === 'Sustainability' ? '-2rem' : 0,
-                    height: industry.title === 'Healthcare' ? '100%' : '90%',
+                    right: industry.title.includes('Healthcare') ? '-4rem' : industry.title.includes('Education') ? '-2rem' : 0,
+                    height: industry.title.includes('Healthcare') ? '95%' : '80%',
                     objectFit: 'contain',
                     zIndex: 1,
                     objectPosition: 'bottom right'

@@ -9,7 +9,7 @@ const DedicatedDevelopers = () => {
       {/* Page Header */}
       <section style={{ background: 'var(--bg-alt)', paddingBottom: '2rem' }}>
         <div className="container">
-          <div style={{ display: 'inline-block', padding: '0.5rem 1rem', background: 'rgba(79, 70, 229, 0.1)', color: 'var(--primary)', borderRadius: '9999px', fontWeight: 600, marginBottom: '1rem' }}>
+          <div style={{ display: 'inline-block', padding: '0.5rem 1rem', background: 'rgba(216, 76, 135, 0.1)', color: 'var(--primary)', borderRadius: '9999px', fontWeight: 600, marginBottom: '1rem' }}>
             Service Details
           </div>
           <h1 className="page-title" style={{ textAlign: 'left' }}>Dedicated <span className="gradient-text">Developers</span></h1>
@@ -26,7 +26,7 @@ const DedicatedDevelopers = () => {
               </p>
             </div>
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-              <img src="/dedicated_devs.png" alt="Dedicated Developers" className="content-image" style={{ width: '100%', height: 'auto', maxHeight: '400px', objectFit: 'cover' }} />
+              <img src="/Services/dedicated%20developers.jpg" alt="Dedicated Developers" className="content-image" style={{ width: '100%', height: 'auto', maxHeight: '400px', objectFit: 'cover', borderRadius: '1rem' }} />
             </motion.div>
           </div>
 
@@ -34,7 +34,7 @@ const DedicatedDevelopers = () => {
           
           <div className="grid" style={{ marginBottom: '5rem' }}>
             <div className="card glass-panel" style={{ padding: '3rem 2rem' }}>
-              <div style={{ background: 'rgba(79, 70, 229, 0.1)', display: 'inline-flex', padding: '1rem', borderRadius: '50%', marginBottom: '1.5rem' }}>
+              <div style={{ background: 'rgba(216, 76, 135, 0.1)', display: 'inline-flex', padding: '1rem', borderRadius: '50%', marginBottom: '1.5rem' }}>
                 <Users size={32} color="var(--primary)" />
               </div>
               <h4 style={{ color: 'var(--text-primary)', marginBottom: '1rem' }}>Remote/Dedicated Resource Model</h4>
@@ -42,7 +42,7 @@ const DedicatedDevelopers = () => {
             </div>
             
             <div className="card glass-panel" style={{ padding: '3rem 2rem' }}>
-              <div style={{ background: 'rgba(79, 70, 229, 0.1)', display: 'inline-flex', padding: '1rem', borderRadius: '50%', marginBottom: '1.5rem' }}>
+              <div style={{ background: 'rgba(216, 76, 135, 0.1)', display: 'inline-flex', padding: '1rem', borderRadius: '50%', marginBottom: '1.5rem' }}>
                 <Code size={32} color="var(--primary)" />
               </div>
               <h4 style={{ color: 'var(--text-primary)', marginBottom: '1rem' }}>Fixed Time & Fixed Cost Developer</h4>
@@ -50,7 +50,7 @@ const DedicatedDevelopers = () => {
             </div>
             
             <div className="card glass-panel" style={{ padding: '3rem 2rem' }}>
-              <div style={{ background: 'rgba(79, 70, 229, 0.1)', display: 'inline-flex', padding: '1rem', borderRadius: '50%', marginBottom: '1.5rem' }}>
+              <div style={{ background: 'rgba(216, 76, 135, 0.1)', display: 'inline-flex', padding: '1rem', borderRadius: '50%', marginBottom: '1.5rem' }}>
                 <Server size={32} color="var(--primary)" />
               </div>
               <h4 style={{ color: 'var(--text-primary)', marginBottom: '1rem' }}>Time and Material or Hourly Rate</h4>

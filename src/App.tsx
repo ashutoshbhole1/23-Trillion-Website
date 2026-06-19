@@ -13,6 +13,7 @@ import Services from './pages/Services';
 import About from './pages/About';
 import Careers from './pages/Careers';
 import Industry from './pages/Industry';
+import IndustryDetail from './pages/IndustryDetail';
 
 // Dedicated Service Pages
 import WebDevelopment from './pages/services/WebDevelopment';
@@ -37,6 +38,7 @@ function AnimatedRoutes() {
         <Route path="/services/dedicated-developers" element={<PageTransition><DedicatedDevelopers /></PageTransition>} />
         <Route path="/services/ai" element={<PageTransition><AISolutions /></PageTransition>} />
         <Route path="/industry" element={<PageTransition><Industry /></PageTransition>} />
+        <Route path="/industry/:slug" element={<PageTransition><IndustryDetail /></PageTransition>} />
         <Route path="/about" element={<PageTransition><About /></PageTransition>} />
         <Route path="/careers" element={<PageTransition><Careers /></PageTransition>} />
       </Routes>

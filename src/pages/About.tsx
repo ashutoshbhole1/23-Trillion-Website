@@ -4,9 +4,15 @@ import ContactForm from '../components/ContactForm';
 
 const About = () => {
   const reviews = [
-    { client: 'Sarah Jenkins', role: 'CTO, TechFlow', text: '23 Trillion delivered our enterprise platform ahead of schedule. Their attention to detail and proactive communication made the entire process seamless. Highly recommended for complex projects.' },
-    { client: 'Michael Chen', role: 'Founder, Innovate AI', text: 'Their AI integration expertise transformed our product. They took the time to truly understand our client needs and built a solution that exceeded all expectations.' },
-    { client: 'Elena Rodriguez', role: 'VP Digital, Global Retail', text: 'The most professional development team we have worked with. From UX design to backend architecture, everything is mentioned clearly, and execution is flawless.' }
+    { client: '', role: 'Operations Director', text: 'Their technology solutions transformed our operations with a fast, reliable, and secure platform. We couldnt have asked for a better technology partner.' },
+    { client: '', role: 'Owner, Billing Platform', text: 'From planning to deployment, their team demonstrated exceptional professionalism, innovation, and execution. The final solution was secure, scalable, and perfectly aligned with our business objectives.' },
+    { client: '', role: 'Vice President for Academic Affairs', text: 'Our e-learning app now runs seamlessly across devices. Their expertise made education more accessible and engaging for our students worldwide.' },
+    { client: '', role: 'Managing Director, Food Department', text: 'Their solution streamlined our entire delivery process, providing real-time updates, improving transparency, and significantly increasing customer satisfaction and retention. Exceptional execution from start to finish.' },
+    { client: '', role: 'Founder & CEO, US/IT Staffing Company', text: 'Beyond providing resources, they helped streamline operations, improve efficiency, and drive measurable business growth.' },
+    { client: '', role: 'CEO, Ecommerce Platform', text: 'They created a scalable, user-friendly platform that boosted our sales and customer retention. A true game-changer for our online business.' },
+    { client: '', role: 'Founder & CEO, Real Estate Company', text: 'Our property listings platform is now sleek, fast, and intuitive. Their solutions helped us attract more buyers and sellers effortlessly.' },
+    { client: '', role: 'Chief Architect, Cloud-based Solution Company', text: 'Their AI-driven insights gave us a competitive edge. Smart, innovative, and practical, exactly what we needed.' },
+    { client: '', role: 'Founder & CEO, IT Cloud Computing Company', text: 'They streamlined our operations with a robust ERP system. Efficiency and transparency across departments improved dramatically.' }
   ];
 
   return (
@@ -14,7 +20,7 @@ const About = () => {
       <section style={{ background: 'var(--bg-tint)' }}>
         <div className="container">
           <div className="responsive-grid-2" style={{ marginBottom: '6rem' }}>
-             <motion.div
+            <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -38,7 +44,7 @@ const About = () => {
               <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem', fontSize: '1.05rem', lineHeight: 1.6 }}>
                 A family-friendly environment boosts up the team to perform the task creatively and professionally. We always reward every member with their excellent enthusiastic performance and contribution to accomplishing new goals. We ensure to make our clients happy with the best resolutions and celebrate the joy of the success.
               </p>
-              
+
               <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', color: 'var(--text-primary)' }}>We believe in-</h3>
               <ul style={{ color: 'var(--text-secondary)', listStyleType: 'disc', paddingLeft: '1.5rem', lineHeight: 1.8, fontSize: '1.05rem' }}>
                 <li>Work with transparency and teamwork.</li>
@@ -57,11 +63,12 @@ const About = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <div style={{ position: 'relative' }}>
-                <div style={{ position: 'absolute', top: '-1rem', left: '-1rem', right: '1rem', bottom: '1rem', background: 'var(--primary)', borderRadius: '1rem', opacity: 0.1, zIndex: 0 }}></div>
-                <img src="/archana soni founder.jpg" alt="Founder" className="content-image" style={{ width: '100%', height: 'auto', borderRadius: '1rem', objectFit: 'cover', position: 'relative', zIndex: 1, boxShadow: '0 20px 40px rgba(0,0,0,0.2)' }} />
+              <div style={{ position: 'relative', maxWidth: '300px', margin: '0 auto' }}>
+                <div style={{ position: 'absolute', top: '-1rem', left: '-1rem', right: '-1rem', bottom: '-1rem', background: 'var(--primary)', borderRadius: '1rem', opacity: 0.1, zIndex: 0 }}></div>
+                <img src="/Archana Soni - Founder.jpg" alt="Founder" className="content-image" style={{ width: '100%', aspectRatio: '1 / 1.2', borderRadius: '1rem', objectFit: 'cover', position: 'relative', zIndex: 1, boxShadow: '0 20px 40px rgba(0,0,0,0.2)' }} />
               </div>
             </motion.div>
+
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -75,9 +82,7 @@ const About = () => {
               <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem', fontSize: '1.05rem', lineHeight: 1.6 }}>
                 "At 23 Trillion, we believe that technology should empower people, not replace them. Our vision from day one was to build a company that marries world-class technical expertise with a deeply human-centric approach. We don't just write code; we build relationships, foster innovation, and commit to the long-term success of our partners."
               </p>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '1.05rem', lineHeight: 1.6 }}>
-                With over 15 years of experience in the tech industry, John has led countless digital transformation initiatives for Fortune 500 companies before founding 23 Trillion to create a more agile, client-focused development agency.
-              </p>
+        
             </motion.div>
           </div>
 
@@ -85,8 +90,8 @@ const About = () => {
       </section>
 
       {/* Client Testimonials Section */}
-      <section style={{ 
-        position: 'relative', 
+      <section style={{
+        position: 'relative',
         padding: '6rem 0',
         backgroundImage: 'url("/about_office.png")',
         backgroundSize: 'cover',
@@ -94,22 +99,22 @@ const About = () => {
         backgroundAttachment: 'fixed'
       }}>
         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(0,0,0,0.7)', zIndex: 0 }}></div>
-        
+
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <h2 style={{ textAlign: 'center', color: 'white', fontSize: '3rem', fontWeight: 700, marginBottom: '4rem' }}>
             Client Testimonials
           </h2>
-          
+
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '2rem' }}>
             {reviews.map((review, idx) => (
-              <motion.div 
+              <motion.div
                 key={idx}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                style={{ 
-                  background: 'rgba(255, 255, 255, 0.08)', 
+                style={{
+                  background: 'rgba(255, 255, 255, 0.08)',
                   backdropFilter: 'blur(16px)',
                   WebkitBackdropFilter: 'blur(16px)',
                   border: '1px solid rgba(255, 255, 255, 0.1)',
@@ -126,7 +131,7 @@ const About = () => {
                 </p>
                 <div>
                   <h4 style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '0.95rem', fontWeight: 600 }}>
-                    {review.client}, {review.role}
+                    {review.client ? `${review.client}, ` : ''}{review.role}
                   </h4>
                 </div>
               </motion.div>
