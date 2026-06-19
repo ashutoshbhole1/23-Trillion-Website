@@ -594,3 +594,45 @@ li {
   background: linear-gradient(to right, var(--primary), var(--secondary));
   border-radius: 9999px;
 }
+
+/* Industry Cards */
+.industry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+  gap: 2.5rem;
+}
+
+.industry-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  padding: 3rem 2rem;
+  height: 100%;
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.industry-card-title {
+  font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .industry-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .industry-card {
+    min-height: 260px;
+    padding: 1.5rem;
+  }
+  .industry-card-title {
+    font-size: 1.8rem !important;
+  }
+  .industry-card-img {
+    height: 70% !important;
+    right: -1rem !important;
+  }
+}

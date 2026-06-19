@@ -97,22 +97,13 @@ const Industry = () => {
 
       <section style={{ paddingBottom: '6rem' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(480px, 1fr))', gap: '2.5rem' }}>
+          <div className="industry-grid">
             {industriesList.map((industry, idx) => (
               <motion.div
                 key={idx}
+                className="industry-card"
                 style={{
-                  position: 'relative',
-                  overflow: 'hidden',
                   background: industry.gradient,
-                  borderRadius: '1.5rem',
-                  padding: '3rem 2rem',
-                  height: '100%',
-                  minHeight: '380px',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  justifyContent: 'space-between',
-                  boxShadow: '0 10px 25px rgba(0,0,0,0.05)'
                 }}
                 whileHover={{ y: -5, boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}
                 initial={{ opacity: 0, y: 20 }}
@@ -121,7 +112,7 @@ const Industry = () => {
                 transition={{ delay: idx * 0.1 }}
               >
                 <div style={{ position: 'relative', zIndex: 10, maxWidth: '60%' }}>
-                  <h3 style={{ fontSize: '2.5rem', fontWeight: 700, color: industry.textColor, marginBottom: '1rem' }}>{industry.title}</h3>
+                  <h3 className="industry-card-title" style={{ fontWeight: 700, color: industry.textColor, marginBottom: '1rem' }}>{industry.title}</h3>
                   <p style={{ color: industry.textColor, opacity: 0.8, lineHeight: 1.5, fontSize: '0.95rem', marginBottom: '2rem' }}>{industry.desc}</p>
                 </div>
 
@@ -151,6 +142,7 @@ const Industry = () => {
                 <img
                   src={industry.imgSrc}
                   alt={industry.title}
+                  className="industry-card-img"
                   style={{
                     position: 'absolute',
                     bottom: 0,
