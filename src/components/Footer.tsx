@@ -53,7 +53,7 @@ const Footer = () => (
         </div>
       </div>
       <div style={{ borderTop: '1px solid rgba(0,0,0,0.1)', paddingTop: '2rem', textAlign: 'center', fontSize: '0.9rem', color: 'var(--footer-text)' }}>
-        &copy; {new Date().getFullYear()} 23 Trillion. All rights reserved. Built for modern enterprises.
+        &copy; {new Date().getFullYear()} <span style={{color: 'var(--primary)', fontWeight: 600}}>23 Trillion.</span> All rights reserved. Built for modern enterprises.
       </div>
       {/* <h1>Designed & developed by KANHA-ASHU TECH <a href="https://kanhaashu.com">Ashutosh Bhole</a></h1> */}
     </div>

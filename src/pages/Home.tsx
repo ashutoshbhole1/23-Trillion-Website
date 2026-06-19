@@ -31,9 +31,14 @@ const Home = () => (
               </button>
             </Link>
             <Link to="/about">
-              <button className="glass-panel" style={{ padding: '0.875rem 1.75rem', color: 'var(--text-primary)', border: '1px solid var(--card-border)', borderRadius: '9999px', background: 'white', fontWeight: 600 }}>
+              <motion.button 
+                className="glass-panel" 
+                style={{ padding: '0.875rem 1.75rem', color: 'var(--text-primary)', border: '1px solid var(--card-border)', borderRadius: '9999px', background: 'white', fontWeight: 600 }}
+                whileHover={{ scale: 1.05, color: 'var(--primary)', borderColor: 'var(--primary)' }}
+                transition={{ duration: 0.2 }}
+              >
                 Learn More
-              </button>
+              </motion.button>
             </Link>
           </div>
         </motion.div>
