@@ -9,7 +9,7 @@ const Home = () => (
       <img src="/hero_bg.png" alt="Hero Background" className="hero-bg-img" />
       <div className="hero-glow"></div>
       <div className="container">
-        <motion.div 
+        <motion.div
           className="hero-content"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Globe, Smartphone, PenTool, LineChart, Users, ArrowRight, Cpu } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import ContactForm from '../components/ContactForm';
 
 const Services = () => {
