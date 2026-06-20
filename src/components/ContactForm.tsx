@@ -5,10 +5,38 @@ import { Send } from 'lucide-react';
 const ContactForm = () => {
   const [formStatus, setFormStatus] = useState('idle');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setFormStatus('submitting');
-    setTimeout(() => setFormStatus('success'), 1500);
+    
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      fullName: formData.get('fullName'),
+      email: formData.get('email'),
+      company: formData.get('company'),
+      projectType: formData.get('projectType'),
+      budget: formData.get('budget'),
+      description: formData.get('description'),
+    };
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        setFormStatus('success');
+      } else {
+        setFormStatus('idle');
+        alert('There was an issue submitting your request. Please try again.');
+      }
+    } catch (error) {
+      console.error(error);
+      setFormStatus('idle');
+      alert('Network error. Please try again later.');
+    }
   };
 
   return (
@@ -45,23 +73,23 @@ const ContactForm = () => {
                 <div className="form-grid-2">
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                     <label style={{ fontSize: '0.875rem', fontWeight: 600 }}>Full Name</label>
-                    <input type="text" required placeholder="John Doe" style={inputStyle} />
+                    <input type="text" name="fullName" required placeholder="John Doe" style={inputStyle} />
                   </div>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                     <label style={{ fontSize: '0.875rem', fontWeight: 600 }}>Work Email</label>
-                    <input type="email" required placeholder="john@company.com" style={inputStyle} />
+                    <input type="email" name="email" required placeholder="john@company.com" style={inputStyle} />
                   </div>
                 </div>
 
                 <div className="form-grid-2">
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                     <label style={{ fontSize: '0.875rem', fontWeight: 600 }}>Company Name</label>
-                    <input type="text" placeholder="Acme Corp" style={inputStyle} />
+                    <input type="text" name="company" placeholder="Acme Corp" style={inputStyle} />
                   </div>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                     <label style={{ fontSize: '0.875rem', fontWeight: 600 }}>Project Type</label>
-                    <select required style={inputStyle}>
-                      <option value="" disabled selected>Select an option</option>
+                    <select name="projectType" required style={inputStyle} defaultValue="">
+                      <option value="" disabled>Select an option</option>
                       <option value="custom">Custom Software Development</option>
                       <option value="ai">AI Integration & ML Models</option>
                       <option value="web">Enterprise Web Platform</option>
@@ -73,8 +101,8 @@ const ContactForm = () => {
 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                   <label style={{ fontSize: '0.875rem', fontWeight: 600 }}>Estimated Budget</label>
-                  <select required style={inputStyle}>
-                    <option value="" disabled selected>Select budget range</option>
+                  <select name="budget" required style={inputStyle} defaultValue="">
+                    <option value="" disabled>Select budget range</option>
                     <option value="10-25">$10,000 - $25,000</option>
                     <option value="25-50">$25,000 - $50,000</option>
                     <option value="50-100">$50,000 - $100,000</option>
@@ -85,6 +113,7 @@ const ContactForm = () => {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                   <label style={{ fontSize: '0.875rem', fontWeight: 600 }}>Project Description & Goals</label>
                   <textarea 
+                    name="description"
                     required 
                     rows={4} 
                     placeholder="Briefly describe your requirements, current challenges, and the business goals for this project..."
