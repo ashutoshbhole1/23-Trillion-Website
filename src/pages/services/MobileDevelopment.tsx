@@ -26,7 +26,7 @@ const MobileDevelopment = () => {
               </p>
             </div>
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-              <img src="/Services/App%20development.jpg" alt="Mobile Development" className="content-image" style={{ width: '100%', height: 'auto', maxHeight: '400px', objectFit: 'cover', borderRadius: '1rem' }} />
+              <img src="/Services/stock_mobile.jpg" alt="Mobile Development" className="content-image" style={{ width: '100%', height: 'auto', maxHeight: '400px', objectFit: 'cover', borderRadius: '1rem' }} />
             </motion.div>
           </div>
 
