@@ -25,7 +25,7 @@ const About = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <img src="/about_office.png" alt="Our Office" className="content-image" style={{ width: '100%', height: 'auto', maxHeight: '400px', objectFit: 'cover' }} />
+              <img src="/about_office.png" alt="Our Office" className="content-image" style={{ width: '100%', height: 'auto', maxHeight: '400px', objectFit: 'cover', borderRadius: '0' }} />
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 30 }}

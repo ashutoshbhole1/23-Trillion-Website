@@ -30,7 +30,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="container nav-content">
         <Link to="/" className="logo-container" style={{ display: 'flex', alignItems: 'center', maxWidth: '75%' }} onClick={() => setIsOpen(false)}>
-          <img src="/23%20trillion%20transparent%20logo.png" alt="23 Trillion Logo" style={{ height: '50px', maxWidth: '100%', objectFit: 'contain' }} />
+          <img src="/23 TRILLION logo.png" alt="23 Trillion Logo" style={{ height: '50px', maxWidth: '100%', objectFit: 'contain' }} />
         </Link>
         <div className="nav-links">
           <Link to="/" className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}>Home</Link>

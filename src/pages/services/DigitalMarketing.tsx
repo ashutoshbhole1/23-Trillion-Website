@@ -4,7 +4,7 @@ import ContactForm from '../../components/ContactForm';
 const DigitalMarketing = () => {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} style={{ paddingTop: '5rem' }}>
-      
+
       {/* Page Header */}
       <section style={{ background: 'var(--bg-alt)', paddingBottom: '2rem' }}>
         <div className="container">
@@ -53,9 +53,9 @@ const DigitalMarketing = () => {
               <ul style={{ listStyle: 'none', padding: 0, color: 'var(--text-secondary)', marginBottom: '2rem' }}>
                 <li>Marketing strategy</li><li>Competitive analysis</li><li>Social media audit</li><li>Monthly management</li><li>Monthly reporting</li>
               </ul>
-              <button className="glow-btn">Get Started</button>
+              <button className="glow-btn" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>Get Started</button>
             </div>
-            
+
             <div className="card glass-panel" style={{ borderTop: '4px solid #FFD700', textAlign: 'center', padding: '3rem 2rem', transform: 'scale(1.05)', position: 'relative' }}>
               <div style={{ position: 'absolute', top: '-16px', left: '50%', transform: 'translateX(-50%)', background: 'var(--primary)', padding: '6px 16px', borderRadius: '20px', fontSize: '0.9rem', fontWeight: 'bold', color: 'white' }}>POPULAR</div>
               <h4 style={{ marginBottom: '1rem' }}>GOLD</h4>
@@ -63,16 +63,16 @@ const DigitalMarketing = () => {
               <ul style={{ listStyle: 'none', padding: 0, color: 'var(--text-secondary)', marginBottom: '2rem' }}>
                 <li>Marketing strategy</li><li>Competitive analysis</li><li>Social media audit</li><li>Monthly management</li><li>Monthly reporting</li>
               </ul>
-              <button className="glow-btn">Get Started</button>
+              <button className="glow-btn" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>Get Started</button>
             </div>
-            
+
             <div className="card glass-panel" style={{ borderTop: '4px solid #E5E4E2', textAlign: 'center', padding: '3rem 2rem' }}>
               <h4 style={{ marginBottom: '1rem' }}>PLATINUM</h4>
               <div style={{ fontSize: '2.5rem', fontWeight: 700, color: 'var(--primary)', marginBottom: '1.5rem' }}>$499<span style={{ fontSize: '1rem', color: 'var(--text-secondary)' }}>/mo</span></div>
               <ul style={{ listStyle: 'none', padding: 0, color: 'var(--text-secondary)', marginBottom: '2rem' }}>
                 <li>Marketing strategy</li><li>Competitive analysis</li><li>Social media audit</li><li>Monthly management</li><li>Monthly reporting</li>
               </ul>
-              <button className="glow-btn">Get Started</button>
+              <button className="glow-btn" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>Get Started</button>
             </div>
           </div>
         </div>

@@ -60,8 +60,8 @@ const Services = () => {
             {servicesList.map((service, idx) => (
               <Link to={service.path} key={idx} style={{ textDecoration: 'none' }}>
                 <motion.div
-                  className="card glass-panel"
-                  style={{ height: '100%', display: 'flex', flexDirection: 'column', cursor: 'pointer', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}
+                  className="card glass-panel service-card"
+                  style={{ height: '100%', display: 'flex', flexDirection: 'column', cursor: 'pointer', transition: 'transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease' }}
                   whileHover={{ y: -10, boxShadow: '0 20px 40px rgba(0,0,0,0.4)' }}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -71,10 +71,10 @@ const Services = () => {
                   <div style={{ width: '100%', height: '180px', marginBottom: '1.5rem', borderRadius: '0.5rem', overflow: 'hidden' }}>
                     <img src={service.image} alt={service.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   </div>
-                  <h3 className="card-title" style={{ fontSize: '1.4rem', color: 'var(--text-primary)' }}>{service.title}</h3>
-                  <p className="card-desc" style={{ flexGrow: 1, color: 'var(--text-secondary)' }}>{service.desc}</p>
+                  <h3 className="card-title" style={{ fontSize: '1.4rem' }}>{service.title}</h3>
+                  <p className="card-desc" style={{ flexGrow: 1 }}>{service.desc}</p>
 
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary)', fontWeight: 600, marginTop: '1.5rem' }}>
+                  <div className="read-more" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 600, marginTop: '1.5rem' }}>
                     Read More <ArrowRight size={18} />
                   </div>
                 </motion.div>

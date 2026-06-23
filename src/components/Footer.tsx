@@ -11,7 +11,7 @@ const Footer = () => (
     <div className="container">
       <div className="footer-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '3rem', marginBottom: '4rem' }}>
         <div>
-          <img src="/23%20trillion%20transparent%20logo.png" alt="23 Trillion" style={{ height: '70px', marginBottom: '1rem', objectFit: 'contain' }} />
+          <img src="/23 TRILLION logo.png" alt="23 Trillion" style={{ height: '70px', marginBottom: '1rem', objectFit: 'contain' }} />
           <p style={{ color: 'var(--footer-text)', fontSize: '0.95rem', lineHeight: 1.6, marginBottom: '2rem' }}>
             Empowering businesses with world-class technology solutions, from intuitive web applications to advanced AI systems.
           </p>
@@ -27,6 +27,8 @@ const Footer = () => (
           <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
             <li><Link to="/services/web-development" style={{ color: 'var(--footer-text)', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={e => e.currentTarget.style.color = 'var(--primary)'} onMouseOut={e => e.currentTarget.style.color = 'var(--footer-text)'}>Website & CMS</Link></li>
             <li><Link to="/services/mobile-development" style={{ color: 'var(--footer-text)', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={e => e.currentTarget.style.color = 'var(--primary)'} onMouseOut={e => e.currentTarget.style.color = 'var(--footer-text)'}>Mobile Apps</Link></li>
+            
+            <li><Link to="/services/ai" style={{ color: 'var(--footer-text)', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={e => e.currentTarget.style.color = 'var(--primary)'} onMouseOut={e => e.currentTarget.style.color = 'var(--footer-text)'}>AI Solutions</Link></li>
             <li><Link to="/services/ui-ux-design" style={{ color: 'var(--footer-text)', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={e => e.currentTarget.style.color = 'var(--primary)'} onMouseOut={e => e.currentTarget.style.color = 'var(--footer-text)'}>UI/UX Design</Link></li>
             <li><Link to="/services/digital-marketing" style={{ color: 'var(--footer-text)', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={e => e.currentTarget.style.color = 'var(--primary)'} onMouseOut={e => e.currentTarget.style.color = 'var(--footer-text)'}>Digital Marketing</Link></li>
             <li><Link to="/services/dedicated-developers" style={{ color: 'var(--footer-text)', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={e => e.currentTarget.style.color = 'var(--primary)'} onMouseOut={e => e.currentTarget.style.color = 'var(--footer-text)'}>Dedicated Team</Link></li>
@@ -37,19 +39,18 @@ const Footer = () => (
           <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
             <li><Link to="/about" style={{ color: 'var(--footer-text)', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={e => e.currentTarget.style.color = 'var(--primary)'} onMouseOut={e => e.currentTarget.style.color = 'var(--footer-text)'}>About Us</Link></li>
             <li><Link to="/careers" style={{ color: 'var(--footer-text)', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={e => e.currentTarget.style.color = 'var(--primary)'} onMouseOut={e => e.currentTarget.style.color = 'var(--footer-text)'}>Careers</Link></li>
-            <li><Link to="/services/ai" style={{ color: 'var(--footer-text)', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={e => e.currentTarget.style.color = 'var(--primary)'} onMouseOut={e => e.currentTarget.style.color = 'var(--footer-text)'}>AI Solutions</Link></li>
             <li><a href="#contact" style={{ color: 'var(--footer-text)', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={e => e.currentTarget.style.color = 'var(--primary)'} onMouseOut={e => e.currentTarget.style.color = 'var(--footer-text)'}>Contact</a></li>
           </ul>
         </div>
         <div>
           <h4 style={{ color: 'var(--text-primary)', marginBottom: '1.5rem', fontSize: '1.1rem' }}>Contact Us</h4>
           <p style={{ color: 'var(--footer-text)', fontSize: '0.95rem', marginBottom: '1.5rem' }}>Get in touch with us for world-class technology solutions.</p>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: '1.5rem', color: 'var(--footer-text)', fontSize: '0.9rem' }}>
+          <a href="mailto:sales@23trillion.com" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: '1.5rem', color: 'var(--footer-text)', fontSize: '0.9rem', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={e => e.currentTarget.style.color = 'var(--primary)'} onMouseOut={e => e.currentTarget.style.color = 'var(--footer-text)'}>
             <Mail size={16} /> sales@23trillion.com
-          </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: '0.75rem', color: 'var(--footer-text)', fontSize: '0.9rem' }}>
-            <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> 8982998208
-          </div>
+          </a>
+          <a href="tel:+918982998208" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: '0.75rem', color: 'var(--footer-text)', fontSize: '0.9rem', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={e => e.currentTarget.style.color = 'var(--primary)'} onMouseOut={e => e.currentTarget.style.color = 'var(--footer-text)'}>
+            <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> +91 8982998208
+          </a>
         </div>
       </div>
       <div style={{ borderTop: '1px solid rgba(0,0,0,0.1)', paddingTop: '2rem', textAlign: 'center', fontSize: '0.9rem', color: 'var(--footer-text)' }}>

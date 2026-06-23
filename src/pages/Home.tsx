@@ -82,51 +82,51 @@ const Home = () => (
         </div>
         <div className="grid">
           <Link to="/services/web-development" style={{ textDecoration: 'none' }}>
-            <div className="card glass-panel" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+            <div className="card glass-panel service-card" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
               <div className="card-icon"><Globe size={24} /></div>
               <h3 className="card-title">Website & CMS</h3>
               <p className="card-desc" style={{ flexGrow: 1 }}>Enhance your website ranking and visibility with custom web and CMS solutions.</p>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary)', fontWeight: 600, marginTop: '1.5rem' }}>Read More <ArrowRight size={18} /></div>
+              <div className="read-more" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 600, marginTop: '1.5rem' }}>Read More <ArrowRight size={18} /></div>
             </div>
           </Link>
           <Link to="/services/mobile-development" style={{ textDecoration: 'none' }}>
-            <div className="card glass-panel" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+            <div className="card glass-panel service-card" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
               <div className="card-icon"><Smartphone size={24} /></div>
               <h3 className="card-title">Mobile Apps</h3>
               <p className="card-desc" style={{ flexGrow: 1 }}>Ease the user’s app experiences with multiplatform and native mobile applications.</p>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary)', fontWeight: 600, marginTop: '1.5rem' }}>Read More <ArrowRight size={18} /></div>
+              <div className="read-more" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 600, marginTop: '1.5rem' }}>Read More <ArrowRight size={18} /></div>
             </div>
           </Link>
           <Link to="/services/ui-ux-design" style={{ textDecoration: 'none' }}>
-            <div className="card glass-panel" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+            <div className="card glass-panel service-card" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
               <div className="card-icon"><PenTool size={24} /></div>
               <h3 className="card-title">UI/UX Design</h3>
               <p className="card-desc" style={{ flexGrow: 1 }}>Keep users engaged with your brand with responsive pixel-perfect interactive designs.</p>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary)', fontWeight: 600, marginTop: '1.5rem' }}>Read More <ArrowRight size={18} /></div>
+              <div className="read-more" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 600, marginTop: '1.5rem' }}>Read More <ArrowRight size={18} /></div>
             </div>
           </Link>
           <Link to="/services/digital-marketing" style={{ textDecoration: 'none' }}>
-            <div className="card glass-panel" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+            <div className="card glass-panel service-card" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
               <div className="card-icon"><LineChart size={24} /></div>
               <h3 className="card-title">Digital Marketing</h3>
               <p className="card-desc" style={{ flexGrow: 1 }}>Results-driven digital marketing. Boost your online presence with SEO and SMO packages.</p>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary)', fontWeight: 600, marginTop: '1.5rem' }}>Read More <ArrowRight size={18} /></div>
+              <div className="read-more" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 600, marginTop: '1.5rem' }}>Read More <ArrowRight size={18} /></div>
             </div>
           </Link>
           <Link to="/services/dedicated-developers" style={{ textDecoration: 'none' }}>
-            <div className="card glass-panel" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+            <div className="card glass-panel service-card" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
               <div className="card-icon"><Users size={24} /></div>
               <h3 className="card-title">Dedicated Team</h3>
               <p className="card-desc" style={{ flexGrow: 1 }}>Hire expert developers as your extended team via remote, fixed-time, or hourly models.</p>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary)', fontWeight: 600, marginTop: '1.5rem' }}>Read More <ArrowRight size={18} /></div>
+              <div className="read-more" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 600, marginTop: '1.5rem' }}>Read More <ArrowRight size={18} /></div>
             </div>
           </Link>
           <Link to="/services/ai" style={{ textDecoration: 'none' }}>
-            <div className="card glass-panel" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+            <div className="card glass-panel service-card" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
               <div className="card-icon"><Cpu size={24} /></div>
               <h3 className="card-title">AI Solutions</h3>
               <p className="card-desc" style={{ flexGrow: 1 }}>Empower your business with cutting-edge artificial intelligence, machine learning, and automation.</p>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary)', fontWeight: 600, marginTop: '1.5rem' }}>Read More <ArrowRight size={18} /></div>
+              <div className="read-more" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 600, marginTop: '1.5rem' }}>Read More <ArrowRight size={18} /></div>
             </div>
           </Link>
         </div>

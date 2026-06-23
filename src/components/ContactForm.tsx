@@ -8,7 +8,7 @@ const ContactForm = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setFormStatus('submitting');
-    
+
     const formData = new FormData(e.currentTarget);
     const data = {
       fullName: formData.get('fullName'),
@@ -50,8 +50,8 @@ const ContactForm = () => {
             </p>
           </div>
 
-          <motion.div 
-            className="glass-panel form-card" 
+          <motion.div
+            className="glass-panel form-card"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -60,8 +60,8 @@ const ContactForm = () => {
               <div style={{ textAlign: 'center', padding: '4rem 0' }}>
                 <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: 'var(--primary)' }}>Request Received</h3>
                 <p style={{ color: 'var(--text-secondary)' }}>Our engineering team will review your requirements and get back to you within 24 hours.</p>
-                <button 
-                  className="glow-btn" 
+                <button
+                  className="glow-btn"
                   style={{ marginTop: '2rem' }}
                   onClick={() => setFormStatus('idle')}
                 >
@@ -93,6 +93,7 @@ const ContactForm = () => {
                       <option value="custom">Custom Software Development</option>
                       <option value="ai">AI Integration & ML Models</option>
                       <option value="web">Enterprise Web Platform</option>
+                      <option value="marketing">Digital Marketing</option>
                       <option value="mobile">Mobile Application</option>
                       <option value="data">Data Engineering</option>
                     </select>
@@ -103,27 +104,27 @@ const ContactForm = () => {
                   <label style={{ fontSize: '0.875rem', fontWeight: 600 }}>Estimated Budget</label>
                   <select name="budget" required style={inputStyle} defaultValue="">
                     <option value="" disabled>Select budget range</option>
-                    <option value="10-25">$10,000 - $25,000</option>
-                    <option value="25-50">$25,000 - $50,000</option>
-                    <option value="50-100">$50,000 - $100,000</option>
-                    <option value="100+">$100,000+</option>
+                    <option value="10-25">$5,000 - $10,000</option>
+                    <option value="25-50">$10,000 - $25,000</option>
+                    <option value="50-100">$25,000 - $50,000</option>
+                    <option value="100+">$50,000+</option>
                   </select>
                 </div>
 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                   <label style={{ fontSize: '0.875rem', fontWeight: 600 }}>Project Description & Goals</label>
-                  <textarea 
+                  <textarea
                     name="description"
-                    required 
-                    rows={4} 
+                    required
+                    rows={4}
                     placeholder="Briefly describe your requirements, current challenges, and the business goals for this project..."
                     style={{ ...inputStyle, resize: 'vertical' }}
                   ></textarea>
                 </div>
 
-                <button 
-                  type="submit" 
-                  className="glow-btn" 
+                <button
+                  type="submit"
+                  className="glow-btn"
                   style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '0.5rem', marginTop: '1rem', padding: '1rem' }}
                   disabled={formStatus === 'submitting'}
                 >
