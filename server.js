@@ -5,10 +5,11 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
 
-dotenv.config();
-
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
+dotenv.config({ path: path.join(__dirname, '.env') });
+console.log("Loaded EMAIL_USER:", process.env.EMAIL_USER ? "YES" : "NO");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -29,13 +30,15 @@ app.post('/api/contact', async (req, res) => {
 
   try {
     const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST || 'smtp.gmail.com',
-      port: Number(process.env.SMTP_PORT) || 465,
-      secure: Number(process.env.SMTP_PORT) === 465,
+      host: process.env.SMTP_HOST || 'smtp.hostinger.in',
+      port: 465,
+      secure: true,
       auth: {
-        user: process.env.EMAIL_USER,
+        user: process.env.EMAIL_USER || 'sales@23trillion.com',
         pass: process.env.EMAIL_PASS,
       },
+      debug: true, // show debug output
+      logger: true // log information in console
     });
 
     const mailOptions = {
