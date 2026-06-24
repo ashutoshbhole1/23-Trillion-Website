@@ -22,7 +22,7 @@ const Loader = () => {
           style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
         >
           <img 
-            src="/23 TRILLION logo.png" 
+            src="/23 trillion logo final.png" 
             alt="23 Trillion Logo" 
             style={{ height: '100px', objectFit: 'contain' }}
           />

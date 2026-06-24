@@ -11,7 +11,7 @@ const Footer = () => (
     <div className="container">
       <div className="footer-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '3rem', marginBottom: '4rem' }}>
         <div>
-          <img src="/23 TRILLION logo.png" alt="23 Trillion" style={{ height: '70px', marginBottom: '1rem', objectFit: 'contain' }} />
+          <img src="/23 trillion logo final.png" alt="23 Trillion" style={{ height: '70px', marginBottom: '1rem', objectFit: 'contain' }} />
           <p style={{ color: 'var(--footer-text)', fontSize: '0.95rem', lineHeight: 1.6, marginBottom: '2rem' }}>
             Empowering businesses with world-class technology solutions, from intuitive web applications to advanced AI systems.
           </p>
