@@ -1,10 +1,26 @@
+import express from 'express';
+import cors from 'cors';
 import nodemailer from 'nodemailer';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import dotenv from 'dotenv';
 
-export default async function handler(req: any, res: any) {
-  if (req.method !== 'POST') {
-    return res.status(405).json({ message: 'Method Not Allowed' });
-  }
+dotenv.config();
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+app.use(cors());
+app.use(express.json());
+
+// Serve static files from the React app build directory
+app.use(express.static(path.join(__dirname, 'dist')));
+
+// API endpoint for contact form
+app.post('/api/contact', async (req, res) => {
   const { fullName, email, company, projectType, budget, description } = req.body;
 
   if (!fullName || !email || !description) {
@@ -65,4 +81,14 @@ ${description}
     console.error('Error sending email:', error);
     return res.status(500).json({ message: 'Failed to send email' });
   }
-}
+});
+
+// The "catchall" handler: for any request that doesn't
+// match one above, send back React's index.html file.
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+});
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
