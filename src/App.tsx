@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import PageTransition from './components/PageTransition';
 import Loader from './components/Loader';
+import ScrollToTop from './components/ScrollToTop';
 
 import Home from './pages/Home';
 import Services from './pages/Services';
@@ -70,6 +71,7 @@ function App() {
         {loading && <Loader key="loader" />}
       </AnimatePresence>
       <Router>
+        <ScrollToTop />
         <CustomCursor />
         <Navbar />
         <main style={{ minHeight: '100vh' }}>
